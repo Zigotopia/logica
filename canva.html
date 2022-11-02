@@ -1,0 +1,40 @@
+<body>
+    <canvas width=" 600" height=" 400"></canvas>
+
+</body>
+
+
+<script>
+    // todas essas são bibliotecas do javascript, ou seja apis do javascript
+    var tela = document.querySelector('canvas') //criei a variavel tela selecionando o documento
+    var pincel = tela.getContext('2d') // criei a a variavel pincel indicando a tela e o tipo de pincel
+
+    pincel.fillStyle =
+        'lightgrey' // indiquei a cor que o piecel ira pintar. Lembrabdo que quando é uma propriedade se usa o = para atribuir um valor
+    pincel.fillRect(0, 0, 600, 400)// indiquei as poisções de começo de pincel e as posições onde serão pintadas.Os dois primeiros valores correspondem aosa posiçºao inicial enquantos os outros dois correspondem as outras poisiçºoes que serão pintadas
+
+    pincel.fillStyle = 'green'
+    pincel.fillRect(0, 0, 200, 400)
+
+    pincel.fillStyle = 'red'
+    pincel.fillRect(400, 0, 600, 400)
+
+    pincel.fillStyle = 'yellow'
+    pincel.beginPath()// precisa usar isso para indicar que esta função para indicar que esta começando um caminho. Indica-se toda vez que se começa um novo caminho
+    pincel.moveTo(300, 200) // indicação inical do eixo x e y
+    pincel.lineTo(200, 400) //indicação de pra onde vão se mover os eixos para pintar
+    pincel.lineTo(400, 400)
+    pincel.fill()// comando utilizado para preencher o espaço traçado
+
+    pincel.fillStyle = "blue"
+    pincel.beginPath()
+    pincel.arc(300, 200, 50, 0, 2 * 3.14)
+    pincel.fill()
+
+
+
+
+
+
+
+</script>

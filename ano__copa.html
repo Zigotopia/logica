@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+function escreva(frase, ) {
+		document.write(frase);
+		pulalinha();
+		
+	}
+
+	function pulalinha() {
+		document.write("<br>")
+	}
+
+  var limiteescolhido  = prompt("digite o ano limite desejado") 
+
+  var anoCopa = 1930
+  
+  while ( anoCopa < limiteescolhido) {
+    escreva("Os anos de copa do mundo até o momento foram de " + anoCopa )
+    pulalinha()
+            anoCopa = anoCopa + 4 // aqui estou dando um novo valor a variavel. Ou seja cada vez que a função se repete ela recebe um novo valor
+  }
+
+  escreva("isso é tudo pessoal")
+
+
+</script>
+</html>

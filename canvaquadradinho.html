@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas width="600px" height="400px"></canvas>
+</body>
+<script>
+    var tela = document.querySelector('canvas')
+    var pincel = tela.getContext('2d')
+
+    /*function quadrado(x, y, cor) {
+
+        pincel.fillStyle = cor
+        pincel.fillRect(x, y, 50, 50)
+        pincel.strokeStyle = "black"  // serve para atribuir a cor das bordas
+        pincel.strokeRect(0, 0, 50, 50)  // serve para desenhar as bordas
+
+    }*/
+
+    function quadrado(x, y, cor) {
+
+        pincel.fillStyle = cor
+        pincel.fillRect(x, y, 50, 50)
+        pincel.strokeStyle = "black"  // serve para atribuir a cor das bordas
+        pincel.strokeRect(x, y, 50, 50)  // serve para desenhar as bordas
+    }
+
+
+    for (var x = 0; x < 600; x = x + 50) {
+
+        quadrado(x, 0, 'red')
+        quadrado(x, 50, ' blue')
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+</script>
+
+</html>
